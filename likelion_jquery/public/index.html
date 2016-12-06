@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+    </head>
+    <body style="margin: 20px; border: 2px solid black; border-radius: 50px">
+        <div>
+            <h1 align="center" style="margin-top:100px"><b>FOOD FOOD FOOD </b><i class="fa fa-exclamation"></i></h1>
+        </div>
+        <div class="container" style="margin-top: 50px">
+            <div class="row">
+                 <div class="col-md-3"><p align="center"><img src="img/pizza.png" id="pizza"></p></div>
+                 <div class="col-md-3"><p align="center"><img src="img/hamburger.png" id="hamburger"></p></div>
+                 <div class="col-md-3"><p align="center"><img src="img/bread.png" id="bread"></p></div>
+                 <div class="col-md-3"><p align="center"><img src="img/pretzel.png" id="pretzel"></p></div>
+            </div>
+            <div class="row">
+                 <div class="col-md-3"><div class="well" align="center">pizza</div></div>
+                 <div class="col-md-3"><div class="well" align="center">hamburger</div></div>
+                 <div class="col-md-3"><div class="well" align="center">bread</div></div>
+                 <div class="col-md-3"><div class="well" align="center">pretzel</div></div>
+            </div>   
+            <div class="row">
+                 <div class="col-md-3" align="center">
+                    <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default" id="eatpizza">Eat</button>
+                          <button type="button" class="btn btn-default" id="reorderpizza">Reorder</button>
+                    </div>
+                 </div>
+                 <div class="col-md-3" align="center">
+                    <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default" id="eathamburger">Eat</button>
+                          <button type="button" class="btn btn-default" id="reorderhamburger">Reorder</button>
+                    </div>
+                 </div>
+                 <div class="col-md-3" align="center">
+                    <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default" id="eatbread">Eat</button>
+                          <button type="button" class="btn btn-default" id="reorderbread">Reorder</button>
+                    </div>
+                 </div>
+                 <div class="col-md-3" align="center">
+                    <div class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default" id="eatpretzel">Eat</button>
+                          <button type="button" class="btn btn-default" id="reorderpretzel">Reorder</button>
+                    </div> 
+                 </div>
+            </div>                
+        </div>
+        
+        
+        <p align="center" style="margin-top: 100px"><img src="img/kitchen.png" height="300px" width="300px"></p>
+        <script>
+            // fade out pizza
+            $( "#eatpizza" ).click(function() {
+                $( "#pizza" ).fadeOut( "slow", function() {
+                // Animation complete.
+                });
+            });
+            // fade in pizza
+            $( "#reorderpizza" ).click(function() {
+                $( "#pizza" ).fadeIn( "slow", function() {
+                // Animation complete
+                });
+            });
+            
+            // fade out hamburger
+            $( "#eathamburger" ).click(function() {
+                $( "#hamburger" ).fadeOut( "slow", function() {
+                // Animation complete.
+                });
+            });
+            // fade in hamburger
+            $( "#reorderhamburger" ).click(function() {
+                $( "#hamburger" ).fadeIn( "slow", function() {
+                // Animation complete
+                });
+            });
+            
+            // fade out bread
+            $( "#eatbread" ).click(function() {
+                $( "#bread" ).fadeOut( "slow", function() {
+                // Animation complete.
+                });
+            });
+            // fade in bread
+            $( "#reorderbread" ).click(function() {
+                $( "#bread" ).fadeIn( "slow", function() {
+                // Animation complete
+                });
+            });           
+            
+            // fade out pretzel
+            $( "#eatpretzel" ).click(function() {
+                $( "#pretzel" ).fadeOut( "slow", function() {
+                // Animation complete.
+                });
+            });
+            // fade in pretzel
+            $( "#reorderpretzel" ).click(function() {
+                $( "#pretzel" ).fadeIn( "slow", function() {
+                // Animation complete
+                });
+            });            
+        </script>
+    </body>
+</html>
