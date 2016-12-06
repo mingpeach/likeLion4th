@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+            body {
+                  font-family:'consolas';
+            }
+    </style>
+
+</head>
+<body style="background-color:#33332D;">
+<div class="container">
+	<h1 align="center" style="font-family: consolas; color:#ffffff; margin-top: 50px; margin-bottom: 50px;"><i class="fa fa-terminal"></i> SEND MAIL </h1>
+	<div class="panel panel-default" style="border: none;">
+		<div class="panel-heading" style="background-image: none; background-color: #0DAAFF; color: #ffffff;">
+			<h3 class="panel-title" align="center"><i class="fa fa-heart"></i> <i class="fa fa-heart-o"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart-o"></i> <i class="fa fa-heart"></i></h3>
+		</div>
+		<div class="panel-body">
+			<form action="/complete" method="POST">
+				<div class="form-group">
+					<label for="exampleInputEmail1">To (:Email address)</label>
+					<div class="col-md-12 input-group">
+						<span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+						<input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Title (:Subject)</label>
+					<div class="col-md-12 input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-console"></span></span>
+						<input name="title" type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">From (:Email address)</label>
+					<div class="col-md-12 input-group">
+						<span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+						<input name="email2" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputMessage">Message</label>
+					<div class="col-md-12 input-group">
+						<span class="input-group-addon"><i class="fa fa-pencil-square-o"></i></span>
+						<textarea name="content" class="form-control" rows="10" placeholder="Write Your Message.."></textarea>
+					</div>
+				</div>
+				<p align="center">
+					<button type="reset" class="btn btn-default" style="border: none; background-image: none; background-color: #0DAAFF; color: #ffffff;">Reset</button>
+					<button type="submit" class="btn btn-default" style="border: none; background-image: none; background-color: #0DAAFF; color: #ffffff;">Send</button>
+				</p>
+			</form>
+		</div>
+	</div>
+</div>
+
+</body>
