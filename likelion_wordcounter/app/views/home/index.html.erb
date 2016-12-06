@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <style type="text/css">
+            body {
+                  font-family:'consolas';
+            }
+    </style>
+    <script>
+      counter = function() {
+          var value = $('#text').val();
+      
+          if (value.length == 0) {
+              $('#wordCount').html(0);
+              $('#totalChars').html(0);
+              $('#charCount').html(0);
+              $('#charCountNoSpace').html(0);
+              return;
+          }
+      
+          var regex = /\s+/gi;
+          var wordCount = value.trim().replace(regex, ' ').split(' ').length;
+          var totalChars = value.length;
+          var charCount = value.trim().length;
+          var charCountNoSpace = value.replace(regex, '').length;
+      
+          $('#wordCount').html(wordCount);
+          $('#totalChars').html(totalChars);
+          $('#charCount').html(charCount);
+          $('#charCountNoSpace').html(charCountNoSpace);  
+      };
+      
+      $(document).ready(function() {
+          $('#count').click(counter);
+          $('#text').change(counter);
+          $('#text').keydown(counter);
+          $('#text').keypress(counter);
+          $('#text').keyup(counter);
+          $('#text').blur(counter);
+          $('#text').focus(counter);
+      });  
+    </script>
+    
+    
+</head>
+
+<body style="background-color:#ffd9df;">
+<div class="container">
+	<h1 align="center" style="font-family: consolas; margin-top: 50px; margin-bottom: 50px;"> Word Counter  </h1>
+	<div class="panel panel-default" style="border: none;">
+		<div class="panel-heading" style="background-image: none; background-color: #c0caff; color: #ffffff;">
+			<h3 class="panel-title" align="center"><i class="fa fa-diamond" aria-hidden="true"></i> <i class="fa fa-diamond" aria-hidden="true"></i> <i class="fa fa-diamond" aria-hidden="true"></i> <i class="fa fa-diamond" aria-hidden="true"></i> <i class="fa fa-diamond" aria-hidden="true"></i></h3>
+		</div>
+		<div class="panel-body">
+			<form>
+         <div class="form-group">
+            <label for="exampleInputText"></label>
+            <textarea class="form-control" id="text" style="height: 100px;"></textarea>
+          </div>
+	
+				<p align="center">
+					<button type="reset" class="btn btn-default" style="border: none; background-image: none; background-color: #c0caff; color: #ffffff;">Reset</button>
+				</p>
+			</form>
+		</div>
+	</div>
+
+	<div class="panel panel-default" style="border: none;">
+		<div class="panel-heading" style="background-image: none; background-color: #c0caff; color: #ffffff;">
+			<h3 class="panel-title" align="center"></h3>
+		</div>
+		<div class="panel-body">
+			<form>
+         <div class="form-group" align="center">
+            <font size="5"><span id="wordCount">0</span> words</font> <font size="5"><span id="totalChars">0</span> characters</font> <br> 
+            <font size="5"><span id="charCount">0</span> characters (excluding trails)</font> <br>
+            <font size="5"><span id="charCountNoSpace">0</span> characters (excluding all spaces)</font>
+         </div>
+			</form>
+		</div>
+	</div>
+</div>	
+
+</body>
