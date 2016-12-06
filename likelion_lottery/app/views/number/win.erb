@@ -1,0 +1,57 @@
+<head>
+    
+    <style>
+    .shrink{
+          -webkit-transition:all 0.5s ease-out;
+          -moz-transition:all 0.5s ease-out;
+          -ms-transition:all 0.5s ease-out;
+          -o-transition:all 0.5s ease-out;
+          transition:all 0.5s ease-out;
+    }
+
+    .shrink:hover {
+          -webkit-transform:scale(.7);
+          -moz-transform:scale(.7);
+          -ms-transform:scale(.7);
+          -o-transform:scale(.7);
+          transform:scale(.7);
+    }
+
+</style>
+    
+    
+</head>
+
+
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<p align="center" style="font-size: 100px; background-color: pink; font-family: Comic Sans MS">
+    <i class="fa fa-hand-peace-o"></i> LOTTERY <i class="fa fa-hand-peace-o"></i>
+</p>
+
+<p align="center" style="font-size: 50px; font-family: Comic Sans MS">
+    Look For Your Luck <i class="fa fa-refresh shrink" onclick="location.reload()"></i>
+</p>
+
+
+<p align="center">
+<%= image_tag @image1 %>
+
+<%= image_tag @image2 %>
+
+<%= image_tag @image3 %>
+
+<%= image_tag @image4 %>
+
+<%= image_tag @image5 %>
+
+<%= image_tag @image6 %>
+</p>
+
+<h1 align = "center" style="font-family: Comic Sans MS"><i class="fa fa-plus"></i> BONUS NUMBER  </h1>
+<p align = "center">
+<%= image_tag @image7 %>
+</p>
+
+</body>
